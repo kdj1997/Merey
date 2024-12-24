@@ -1,0 +1,72 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffe6f2; /* Light pink background */
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background-color: white;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2em;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.navbar a.active {
+    font-weight: 700; /* Bold for active page */
+    color: #000;
+}
+
+.navbar a:hover {
+    font-weight: 700;
+    color: #000;
+}
+
+/* Reflection Container */
+.reflection-container {
+    margin-top: 5em; /* Space for fixed navbar */
+    padding: 2em;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+
+.reflection-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+}
+
+.reflection-container h2 {
+    font-size: 1.5rem;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.reflection-container p, .reflection-container ul {
+    font-size: 1rem;
+    color: #555;
+}
